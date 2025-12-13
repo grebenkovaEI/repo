@@ -51,6 +51,10 @@ public class Main {
         System.out.println("Введите третье число: ");
         int c2 = sc.nextInt();
         System.out.println("Проверка: все три полученных методом числа равны. Результат: " + IsEqual.isEqual(a2,b2,c2));
+
+        System.out.println("10. Последовательное сложение чисел: 5, 11, 123, 14, 1");
+        int num6 = LastNumSum.lastNumSum(1, LastNumSum.lastNumSum(14, LastNumSum.lastNumSum(123, (LastNumSum.lastNumSum(5, 11)))));
+        System.out.println("Итого: " + num6);
     }
 }
 
