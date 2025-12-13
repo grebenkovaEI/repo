@@ -17,6 +17,12 @@ public class Main {
         System.out.println("3. Введите число от 0 до 9: ");
         char num3 = sc.next().charAt(0);
         System.out.println("Результат преобразования символа в число: " + CharToNum.charToNum(num3));
+
+        System.out.println("4. Введите число: ");
+        int num4 = sc.nextInt();
+        System.out.println("Проверка: положительное - true, отрицательное - false. Результат: " + IsPositive.isPositive(num4));
+
+
     }
 }
 
