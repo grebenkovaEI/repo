@@ -6,13 +6,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("8. Введите первое число: ");
-        int a1 = sc.nextInt();
-        System.out.println("Введите второе число: ");
-        int b1 = sc.nextInt();
-        System.out.println("Проверка: любое из принятых чисел делит другое нацело. Результат: " + IsDivisor.isDivisor(a1,b1));
-
-
         System.out.println("1. Введите число: ");
         double num1 = sc.nextDouble();
         System.out.println("Дробная часть числа: " + Math.round(FractionalPart.fraction(num1) * 1000.0)/ 1000.0);
@@ -44,6 +37,20 @@ public class Main {
         System.out.println("Введите число для проверки принадлежности к диапазону: ");
         int num5 = sc.nextInt();
         System.out.println("Проверка: введенное число соответствует диапазону от " + a + " до " + b + ". Результат: " + IsInRange.isInRange(a,b,num5));
+
+        System.out.println("8. Введите первое число: ");
+        int a1 = sc.nextInt();
+        System.out.println("Введите второе число: ");
+        int b1 = sc.nextInt();
+        System.out.println("Проверка: любое из принятых чисел делит другое нацело. Результат: " + IsDivisor.isDivisor(a1,b1));
+
+        System.out.println("9. Введите первое число: ");
+        int a2 = sc.nextInt();
+        System.out.println("Введите второе число: ");
+        int b2 = sc.nextInt();
+        System.out.println("Введите третье число: ");
+        int c2 = sc.nextInt();
+        System.out.println("Проверка: все три полученных методом числа равны. Результат: " + IsEqual.isEqual(a2,b2,c2));
     }
 }
 
