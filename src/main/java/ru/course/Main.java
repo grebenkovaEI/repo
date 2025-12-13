@@ -29,6 +29,14 @@ public class Main {
         System.out.println("6. Введите символ: ");
         char ch2 = sc.next().charAt(0);
         System.out.println("Проверка: Это большая буква в диапазоне от ‘A’ до ‘Z’. Результат: " + IsUpperCase.isUpperCase(ch2));
+
+        System.out.println("7. Введите первую границу диапазона: ");
+        int a = sc.nextInt();
+        System.out.println("Введите вторую границу диапазона: ");
+        int b = sc.nextInt();
+        System.out.println("Введите число для проверки принадлежности к диапазону: ");
+        int num5 = sc.nextInt();
+        System.out.println("Проверка: введенное число соответствует диапазону от " + a + " до " + b + ". Результат: " + IsInRange.isInRange(a,b,num5));
     }
 }
 
