@@ -15,16 +15,20 @@ public class Main {
         System.out.println("Сумма двух последних знаков числа: " + SumLastNums.sumLastNums(num2));
 
         System.out.println("3. Введите число от 0 до 9: ");
-        char num3 = sc.next().charAt(0);
-        System.out.println("Результат преобразования символа в число: " + CharToNum.charToNum(num3));
+        char ch1 = sc.next().charAt(0);
+        System.out.println("Результат преобразования символа в число: " + CharToNum.charToNum(ch1));
 
         System.out.println("4. Введите число: ");
-        int num4 = sc.nextInt();
-        System.out.println("Проверка: положительное - true, отрицательное - false. Результат: " + IsPositive.isPositive(num4));
+        int num3 = sc.nextInt();
+        System.out.println("Проверка: положительное - true, отрицательное - false. Результат: " + IsPositive.isPositive(num3));
 
         System.out.println("5. Введите положительное число: ");
-        int num5 = sc.nextInt();
-        System.out.println("Проверка: двузначное - true, недвузначное - false. Результат: " + Is2Digits.is2Digits(num5));
+        int num4 = sc.nextInt();
+        System.out.println("Проверка: двузначное - true, недвузначное - false. Результат: " + Is2Digits.is2Digits(num4));
+
+        System.out.println("6. Введите символ: ");
+        char ch2 = sc.next().charAt(0);
+        System.out.println("Проверка: Это большая буква в диапазоне от ‘A’ до ‘Z’. Результат: " + IsUpperCase.isUpperCase(ch2));
     }
 }
 
