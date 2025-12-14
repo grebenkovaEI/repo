@@ -5,6 +5,59 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Введите соответсвующую цифру: " + "\n" + "1 - ДЗ по теме Классы и методы" + "\n" +
+                "2 - ДЗ по теме Условия");
+        int menu = sc.nextInt();
+        switch (menu) {
+            case 1 -> dzClassesAndMethods();
+            case 2 -> dzConditions();
+        }
+    }
+
+    public static void dzConditions(){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("1. Введите число: ");
+        int num7 = sc.nextInt();
+        System.out.println("Модуль числа " + num7 + " = " + Conditions.abs(num7));
+
+        System.out.println("2. Введите число x: ");
+        int num8 = sc.nextInt();
+        System.out.println("Введите число y: ");
+        int num9 = sc.nextInt();
+        System.out.println("Результат деления x/y: " + Conditions.safeDiv(num8, num9));
+
+        System.out.println("3. Введите число x: ");
+        int num10 = sc.nextInt();
+        System.out.println("Введите число y: ");
+        int num11 = sc.nextInt();
+        System.out.println("Максимальное значение: " + Conditions.max(num10, num11));
+
+        System.out.println("4. Введите число x: ");
+        int num12 = sc.nextInt();
+        System.out.println("Введите число y: ");
+        int num13 = sc.nextInt();
+        System.out.println("Результат сравнения: " + Conditions.makeDecision(num12, num13));
+
+        System.out.println("5. Введите число x: ");
+        int num14 = sc.nextInt();
+        System.out.println("Введите число y: ");
+        int num15 = sc.nextInt();
+        System.out.println("Введите число z: ");
+        int num16 = sc.nextInt();
+        System.out.println("Максимальное число: " + Conditions.max3(num14, num15, num16));
+
+        System.out.println("6. Введите число x: ");
+        int num17 = sc.nextInt();
+        System.out.println("Введите число y: ");
+        int num18 = sc.nextInt();
+        System.out.println("Введите число z: ");
+        int num19 = sc.nextInt();
+        System.out.println("Два любых числа можно сложить так, чтобы получить третье?: " + Conditions.sum3(num17, num18, num19));
+    }
+
+    public static void dzClassesAndMethods(){
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("1. Введите число: ");
         double num1 = sc.nextDouble();
