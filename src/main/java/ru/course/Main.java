@@ -54,6 +54,34 @@ public class Main {
         System.out.println("Введите число z: ");
         int num19 = sc.nextInt();
         System.out.println("Два любых числа можно сложить так, чтобы получить третье?: " + Conditions.sum3(num17, num18, num19));
+
+        System.out.println("7. Введите число x: ");
+        int num20 = sc.nextInt();
+        System.out.println("Введите число y: ");
+        int num21 = sc.nextInt();
+        System.out.println("Результат сложения: " + Conditions.sum2(num20, num21));
+
+        System.out.println("8. Введите число x: ");
+        int num22 = sc.nextInt();
+        System.out.println("Проверка: число делится нацело на 3 или 5? Результат: " + Conditions.is35(num22));
+
+        System.out.println("9. Введите число x: ");
+        int num23 = sc.nextInt();
+        System.out.println("Введите число y: ");
+        int num24 = sc.nextInt();
+        System.out.println("Проверка: x=6 или y=6 или x+y=6 или x-y=6. Результат: " + Conditions.magic6(num23, num24));
+
+        System.out.println("10. Введите число x: ");
+        int num25 = sc.nextInt();
+        System.out.println("Число + год/года/лет. Результат: " + Conditions.age(num25));
+
+        System.out.println("11. Введите число x: ");
+        int num26 = sc.nextInt();
+        System.out.println("Число + год/года/лет. Результат: " + Conditions.day(num26));
+
+        System.out.println("12. Введите день недели: ");
+        String str = sc.nextLine();
+        Conditions.printDays(str);
     }
 
     public static void dzClassesAndMethods(){
