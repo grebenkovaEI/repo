@@ -5,13 +5,36 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Введите соответсвующую цифру: " + "\n" + "1 - ДЗ по теме Классы и методы" + "\n" +
-                "2 - ДЗ по теме Условия");
+        System.out.println("Введите соответствующую цифру:\n" + "1 - ДЗ по теме Классы и методы\n" +
+                "2 - ДЗ по теме Условия\n" + "3 - ДЗ по теме Циклы");
         int menu = sc.nextInt();
         switch (menu) {
             case 1 -> dzClassesAndMethods();
             case 2 -> dzConditions();
+            case 3 -> dzLoops();
         }
+    }
+
+    public static void dzLoops(){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("1. Введите число (от 0 и выше): ");
+        int num1 = sc.nextInt();
+        System.out.println("Все числа от 0 до " + num1 + ":\n" + Loops.listNums(num1));
+
+        System.out.println("2. Введите число (от 0 и выше): ");
+        int num2 = sc.nextInt();
+        System.out.println("Все числа от " + num2 + " до 0:\n" + Loops.reverseListNums(num2));
+
+        System.out.println("3. Введите число: ");
+        int num3 = sc.nextInt();
+        System.out.println("Четные числа от 0 до " + num3 + ":\n" + Loops.chet(num3));
+
+        System.out.println("4. Введите число x: ");
+        int num4 = sc.nextInt();
+        System.out.println("Введите число y: ");
+        int num5 = sc.nextInt();
+        System.out.println("Число " + num4 + " в степени " + num5 + " = " + Loops.pow(num4, num5));
     }
 
     public static void dzConditions(){
