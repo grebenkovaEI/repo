@@ -18,6 +18,12 @@ public class Main {
     public static void dzLoops(){
         Scanner sc = new Scanner(System.in);
 
+
+
+
+
+
+
         System.out.println("1. Введите число (от 0 и выше): ");
         int num1 = sc.nextInt();
         System.out.println("Все числа от 0 до " + num1 + ":\n" + Loops.listNums(num1));
@@ -35,6 +41,10 @@ public class Main {
         System.out.println("Введите число y: ");
         int num5 = sc.nextInt();
         System.out.println("Число " + num4 + " в степени " + num5 + " = " + Loops.pow(num4, num5));
+
+        System.out.println("5. Введите число (от 0 и выше): ");
+        int num6 = sc.nextInt();
+        System.out.println("Количество знаков в числе " + num6 + ": " + Loops.numLen(num6));
     }
 
     public static void dzConditions(){

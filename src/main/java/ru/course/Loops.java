@@ -29,4 +29,18 @@ public class Loops {
         }
         return res;
     }
+    public static int numLen(long x){
+        int count = 0;
+        for (; x > 0; x /= 10) {
+            count++;
+        }
+        return count;
+    }
+//    public static boolean equalNum(int x){
+//        boolean res;
+//        for (; x > 0; x /= 10) {
+//
+//        }
+//        return res;
+//    }
 }
