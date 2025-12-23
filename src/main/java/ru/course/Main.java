@@ -18,12 +18,6 @@ public class Main {
     public static void dzLoops(){
         Scanner sc = new Scanner(System.in);
 
-
-
-
-
-
-
         System.out.println("1. Введите число (от 0 и выше): ");
         int num1 = sc.nextInt();
         System.out.println("Все числа от 0 до " + num1 + ":\n" + Loops.listNums(num1));
@@ -45,6 +39,25 @@ public class Main {
         System.out.println("5. Введите число (от 0 и выше): ");
         int num6 = sc.nextInt();
         System.out.println("Количество знаков в числе " + num6 + ": " + Loops.numLen(num6));
+
+        System.out.println("6. Введите число (от 0 и выше): ");
+        int num7 = sc.nextInt();
+        System.out.println("Все знаки числа одинаковы? Ответ: " + Loops.equalNum(num7));
+
+        System.out.println("7. Введите число: ");
+        int num8 = sc.nextInt();
+        Loops.square(num8);
+
+        System.out.println("8. Введите число: ");
+        int num9 = sc.nextInt();
+        Loops.leftTriangle(num9);
+
+        System.out.println("9. Введите число: ");
+        int num10 = sc.nextInt();
+        Loops.rightTriangle(num10);
+
+        System.out.println("10. Угадайка\n");
+        Loops.guessGame();
     }
 
     public static void dzConditions(){
