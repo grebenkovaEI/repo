@@ -1,20 +1,41 @@
 package ru.course;
 
+import java.io.File;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите соответствующую цифру:\n" + "1 - ДЗ по теме Классы и методы\n" +
-                "2 - ДЗ по теме Условия\n" + "3 - ДЗ по теме Циклы");
+                "2 - ДЗ по теме Условия\n" + "3 - ДЗ по теме Циклы\n" + "4 - Курсовой проект. Задание по теме Циклы");
         int menu = sc.nextInt();
         switch (menu) {
             case 1 -> dzClassesAndMethods();
             case 2 -> dzConditions();
             case 3 -> dzLoops();
+            case 4 -> endlessLoop();
         }
     }
-
+    public static void endlessLoop(){
+        int count = 0;
+        while (true){
+            System.out.println("Введите путь к файлу: ");
+            String path = new Scanner(System.in).nextLine();
+            File file = new File(path);
+            boolean fileExists = file.exists();
+            boolean isDirectory = file.isDirectory();
+            if (isDirectory) {
+                System.out.println("Указанный путь является путём к папке, а не к файлу");
+                continue;
+            }
+            if (!fileExists) {
+                System.out.println("Указанный файл не существует");
+            } else {
+                count++;
+                System.out.println("Путь указан верно\n" + "Это файл номер " + count);
+            }
+        }
+    }
     public static void dzLoops(){
         Scanner sc = new Scanner(System.in);
 
