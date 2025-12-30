@@ -21,14 +21,38 @@ public class Main {
     }
     public static void dzArrays(){
         Scanner sc = new Scanner(System.in);
-        int[] arr = {1,2,3,4,2,2,5};
+        int[] arr = {1,2,3,4,2,2,5,-7};
+        int[] arrPalindrom = {1,-2,-7,4,-7,-2,1};
+
+
+
+
+        System.out.println("7. Массив:\n" + Arrays.toString(arr) + "\nНовый массив:\n" + Arrays.toString(Array.reverseBack(arr)));
+
+
+
 
         System.out.println("Массив: " + Arrays.toString(arr));
         System.out.println("1. Введите число x: ");
         int num1 = sc.nextInt();
         System.out.println("Индекс первого вхождения числа " + num1 + " в массив arr: " + Array.findFirst(arr,num1));
 
+        System.out.println("Массив: " + Arrays.toString(arr));
+        System.out.println("2. Введите число x: ");
+        int num2 = sc.nextInt();
+        System.out.println("Индекс последнего вхождения числа " + num2 + " в массив arr: " + Array.findLast(arr,num2));
 
+        System.out.println("Массив: " + Arrays.toString(arr));
+        System.out.println("3. Наибольшее по модулю значение массива arr: " + Array.maxAbs(arr));
+
+        System.out.println("Массив: " + Arrays.toString(arr));
+        System.out.println("4. Количество положительных элементов массива arr: " + Array.countPositive(arr));
+
+        System.out.println("5. Массив " + Arrays.toString(arr) + " является палиндромом?\n" + Array.palindrom(arr));
+        System.out.println("Массив " + Arrays.toString(arrPalindrom) + " является палиндромом?\n" + Array.palindrom(arrPalindrom));
+
+        System.out.println("6. Массив:\n" + Arrays.toString(arr) + "\nРеверс массива:");
+        Array.reverse(arr);
     }
     public static void endlessLoop(){
         int count = 0;
