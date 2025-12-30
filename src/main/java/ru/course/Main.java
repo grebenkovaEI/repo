@@ -1,20 +1,34 @@
 package ru.course;
 
 import java.io.File;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите соответствующую цифру:\n" + "1 - ДЗ по теме Классы и методы\n" +
-                "2 - ДЗ по теме Условия\n" + "3 - ДЗ по теме Циклы\n" + "4 - Курсовой проект. Задание по теме Циклы");
+                "2 - ДЗ по теме Условия\n" + "3 - ДЗ по теме Циклы\n" + "4 - Курсовой проект. Задание по теме Циклы\n" +
+                "5 - ДЗ по теме Массивы");
         int menu = sc.nextInt();
         switch (menu) {
             case 1 -> dzClassesAndMethods();
             case 2 -> dzConditions();
             case 3 -> dzLoops();
             case 4 -> endlessLoop();
+            case 5 -> dzArrays();
         }
+    }
+    public static void dzArrays(){
+        Scanner sc = new Scanner(System.in);
+        int[] arr = {1,2,3,4,2,2,5};
+
+        System.out.println("Массив: " + Arrays.toString(arr));
+        System.out.println("1. Введите число x: ");
+        int num1 = sc.nextInt();
+        System.out.println("Индекс первого вхождения числа " + num1 + " в массив arr: " + Array.findFirst(arr,num1));
+
+
     }
     public static void endlessLoop(){
         int count = 0;
