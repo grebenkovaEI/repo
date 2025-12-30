@@ -24,14 +24,6 @@ public class Main {
         int[] arr = {1,2,3,4,2,2,5,-7};
         int[] arrPalindrom = {1,-2,-7,4,-7,-2,1};
 
-
-
-
-        System.out.println("7. Массив:\n" + Arrays.toString(arr) + "\nНовый массив:\n" + Arrays.toString(Array.reverseBack(arr)));
-
-
-
-
         System.out.println("Массив: " + Arrays.toString(arr));
         System.out.println("1. Введите число x: ");
         int num1 = sc.nextInt();
@@ -53,6 +45,8 @@ public class Main {
 
         System.out.println("6. Массив:\n" + Arrays.toString(arr) + "\nРеверс массива:");
         Array.reverse(arr);
+
+        System.out.println("7. Массив:\n" + Arrays.toString(arr) + "\nНовый массив:\n" + Arrays.toString(Array.reverseBack(arr)));
     }
     public static void endlessLoop(){
         int count = 0;
